@@ -1,6 +1,6 @@
 {
 	"name": "neutrino-storybook",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"private": true,
 	"description": "Neutrino Storybook middlewares and presets",
 	"main": "packages",
