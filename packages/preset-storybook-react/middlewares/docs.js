@@ -8,7 +8,7 @@ module.exports = function () {
 		const MARKDOWN_EXTENSIONS = /\.md$/
 		let compileRule           = neutrino.config.module.rules.get('compile')
 		let markdownRule          = neutrino.config.module.rules.get('markdown')
-		let compileExtensions     = compileRule && arrify(compileRule.get('test')).concat([DOCS_EXTENSIONS, MARKDOWN_EXTENSIONS])
+		let compileExtensions     = compileRule && arrify(compileRule.get('test')).concat(DOCS_EXTENSIONS)
 
 		neutrino.config
 			.module
@@ -16,6 +16,12 @@ module.exports = function () {
 					// TODO: find a way to not depend on 'compile' rule
 					module.rule('compile')
 						.test(compileExtensions)
+						.end()
+				})
+				.when(compileRule && !markdownRule, function (module) {
+					// TODO: find a way to not depend on 'compile' rule
+					module.rule('compile')
+						.test(compileExtensions.concat(MARKDOWN_EXTENSIONS))
 						.end()
 				})
 				.when(!markdownRule, function (module) {

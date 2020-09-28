@@ -4,7 +4,7 @@ let deepmerge = require('deepmerge')
 
 module.exports = function (customSettings = {}) {
 	return function (neutrino) {
-		const STORIES_EXTENSIONS = '**/*.stories.@(js|jsx|ts|tsx|mdx)'
+		const STORIES_EXTENSIONS = '**/*.stories.@(js|jsx|ts|tsx)'
 		const ROOT_PATH          = '../' // relative to `./.storybook`
 		let sourcePath           = path.relative(process.cwd(), neutrino.options.source)
 		let storiesPattern       = path.join(ROOT_PATH, sourcePath, STORIES_EXTENSIONS)
