@@ -29,7 +29,7 @@
 		"@babel/core": "^7.0.1",
 		"babel-loader": "^8.0.0",
 		"react-is": "^16.8.0",
-		"neutrino-middleware-storybook": "workspace:1.0.0",
+		"neutrino-middleware-storybook": "workspace:1.0.2",
 		"@storybook/addon-actions": "6.0.22",
 		"@storybook/addon-backgrounds": "6.0.22",
 		"@storybook/addon-controls": "6.0.22",
