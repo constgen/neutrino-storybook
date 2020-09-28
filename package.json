@@ -1,0 +1,41 @@
+{
+	"name": "neutrino-storybook",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Neutrino Storybook middlewares and presets",
+	"main": "packages",
+	"author": "Constantine Genchevsky <const.gen@gmail.com>",
+	"license": "GPL-3.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/constgen/neutrino-storybook.git"
+	},
+	"homepage": "https://github.com/constgen/neutrino-storybook",
+	"keywords": [
+		"neutrino",
+		"webpack",
+		"storybook"
+	],
+	"scripts": {
+		"preinstall": "node -e \"!process.env.npm_config_user_agent.startsWith('pnpm/') && !console.log('Use \\`npx pnpm install\\` to install dependencies in this repository\\n') && process.exit(1)\"",
+		"eslint": "eslint ./",
+		"pretest": "npm run eslint -- --max-warnings 0",
+		"lint": "npm run eslint -- --fix"
+	},
+	"dependencies": {
+		"neutrino": "9.4.0",
+		"webpack": "^4.42.1",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1"
+	},
+	"devDependencies": {
+		"neutrino": "9.4.0",
+		"eslint": "7.9.0",
+		"@constgen/eslint": "2.2.0"
+	},
+	"engines": {
+		"node": ">=10.13",
+		"npm": ">=5.4.0",
+		"pnpm": ">=4.12.0"
+	}
+}

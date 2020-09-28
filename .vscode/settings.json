@@ -1,0 +1,24 @@
+{
+   "editor.insertSpaces": false,
+   "editor.detectIndentation": false,
+   "jshint.enable": false,
+   "eslint.enable": true,
+   "editor.formatOnSave": false,
+   "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+   },
+   "javascript.format.enable": true,
+   "javascript.validate.enable": false,
+   "files.eol": "\n",
+   "files.insertFinalNewline": false,
+   "[markdown]": {
+      "editor.tabSize": 3,
+      "editor.insertSpaces": true
+   },
+   "eslint.options": {
+		"extensions": [".js", ".jsx", ".html", ".md", ".vue"],
+		"resolvePluginsRelativeTo": "./node_modules/.pnpm"
+   },
+	"eslint.validate": ["javascript", "javascriptreact", "html", "markdown", "vue"],
+	"eslint.packageManager": "pnpm"
+}

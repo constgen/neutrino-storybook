@@ -1,0 +1,29 @@
+os: linux
+language: node_js
+node_js:
+  - "12"
+cache:
+  npm: false
+  directories:
+    - "~/.pnpm-store"
+before_install:
+  - curl -L https://unpkg.com/@pnpm/self-installer | node
+  - pnpm config set store-dir ~/.pnpm-store
+install:
+  - pnpm install
+script:
+  - npm test
+notifications:
+  email:
+    on_success: change
+    on_failure: change
+before_deploy:
+  - npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
+deploy:
+  edge: true
+  provider: script
+  script: "pnpm -r publish --access public"
+  cleanup: true
+  on:
+    tags: true
+    branch: master

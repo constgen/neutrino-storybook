@@ -1,0 +1,58 @@
+{
+	"name": "neutrino-preset-storybook-react",
+	"version": "0.1.0",
+	"description": "Neutrino preset for Storybook with React",
+	"main": "src/index.js",
+	"author": "Constantine Genchevsky <const.gen@gmail.com>",
+	"license": "GPL-3.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/constgen/neutrino-storybook.git",
+		"directory": "packages/neutrino-preset-storybook-react"
+	},
+	"homepage": "https://github.com/constgen/neutrino-storybook/packages/neutrino-preset-storybook-react",
+	"keywords": [
+		"neutrino",
+		"neutrino-preset",
+		"webpack",
+		"storybook",
+		"react"
+	],
+	"bin": {
+		"build-storybook": "./bin/build.js",
+		"start-storybook": "./bin/start.js",
+		"storybook": "./bin/start.js"
+	},
+	"dependencies": {
+		"deepmerge": "4.2.2",
+		"arrify": "2.0.1",
+		"@babel/core": "^7.0.1",
+		"babel-loader": "^8.0.0",
+		"react-is": "^16.8.0",
+		"neutrino-middleware-storybook": "workspace:0.1.0",
+		"@storybook/addon-actions": "6.0.22",
+		"@storybook/addon-backgrounds": "6.0.22",
+		"@storybook/addon-controls": "6.0.22",
+		"@storybook/addon-docs": "6.0.22",
+		"@storybook/addon-toolbars": "6.0.22",
+		"@storybook/addon-viewport": "6.0.22",
+		"@storybook/addon-links": "^6.0.22",
+		"@storybook/react": "6.0.22",
+		"@storybook/source-loader": "6.0.22",
+		"@mdx-js/loader": "1.6.18"
+	},
+	"peerDependencies": {
+		"neutrino": "^9.0.0",
+		"webpack": "^4.0.0"
+	},
+	"files": [
+		"**/*.js",
+		"README.md",
+		"LICENSE",
+		"package.json"
+	],
+	"engines": {
+		"node": ">=10.13",
+		"npm": ">=5.4.0"
+	}
+}

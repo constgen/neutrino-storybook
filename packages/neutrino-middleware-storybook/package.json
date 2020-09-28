@@ -1,0 +1,37 @@
+{
+	"name": "neutrino-middleware-storybook",
+	"version": "0.1.0",
+	"description": "Neutrino middleware to merge Webpack config with Storybook",
+	"main": "src/index.js",
+	"author": "Constantine Genchevsky <const.gen@gmail.com>",
+	"license": "GPL-3.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/constgen/neutrino-storybook.git",
+		"directory": "packages/neutrino-middleware-storybook"
+	},
+	"homepage": "https://github.com/constgen/neutrino-storybook/packages/neutrino-middleware-storybook",
+	"keywords": [
+		"neutrino",
+		"neutrino-middlware",
+		"webpack",
+		"storybook"
+	],
+	"dependencies": {
+		"deepmerge": "4.2.2"
+	},
+	"peerDependencies": {
+		"neutrino": "^9.0.0",
+		"webpack": "^4.0.0"
+	},
+	"files": [
+		"**/*.js",
+		"README.md",
+		"LICENSE",
+		"package.json"
+	],
+	"engines": {
+		"node": ">=10.13",
+		"npm": ">=5.4.0"
+	}
+}
