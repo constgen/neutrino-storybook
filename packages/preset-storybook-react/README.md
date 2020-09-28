@@ -25,7 +25,7 @@
 - Node.js v10.13+
 - Neutrino v9
 - Storybook v6
-- React v16
+- React
 
 ## Installation
 

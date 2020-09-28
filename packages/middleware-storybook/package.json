@@ -1,6 +1,6 @@
 {
 	"name": "neutrino-middleware-storybook",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Neutrino middleware to merge Webpack config with Storybook",
 	"main": "src/index.js",
 	"author": "Constantine Genchevsky <const.gen@gmail.com>",

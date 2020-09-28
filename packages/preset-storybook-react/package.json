@@ -1,6 +1,6 @@
 {
 	"name": "neutrino-preset-storybook-react",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Neutrino preset for Storybook with React",
 	"main": "src/index.js",
 	"author": "Constantine Genchevsky <const.gen@gmail.com>",
