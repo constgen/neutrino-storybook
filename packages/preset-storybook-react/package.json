@@ -1,6 +1,6 @@
 {
 	"name": "neutrino-preset-storybook-react",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Neutrino preset for Storybook with React",
 	"main": "src/index.js",
 	"author": "Constantine Genchevsky <const.gen@gmail.com>",
@@ -8,9 +8,9 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/constgen/neutrino-storybook.git",
-		"directory": "packages/neutrino-preset-storybook-react"
+		"directory": "packages/preset-storybook-react"
 	},
-	"homepage": "https://github.com/constgen/neutrino-storybook/packages/neutrino-preset-storybook-react",
+	"homepage": "https://github.com/constgen/neutrino-storybook/tree/master/packages/preset-storybook-react",
 	"keywords": [
 		"neutrino",
 		"neutrino-preset",
