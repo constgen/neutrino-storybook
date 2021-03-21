@@ -26,9 +26,9 @@
 npm install --save neutrino-middleware-storybook
 ```
 
-Create a `./storybook/main.js` file in the root of the project, containing:
+Create a `.storybook/main.js` file in the root of the project, containing:
 
-**./storybook/main.js**
+**.storybook/main.js**
 
 ```js
 let neutrino = require('neutrino')

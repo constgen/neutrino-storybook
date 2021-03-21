@@ -1,0 +1,62 @@
+{
+	"name": "neutrino-preset-storybook-vue",
+	"version": "1.2.0",
+	"private": true,
+	"description": "Neutrino preset for Storybook with Vue",
+	"main": "src/index.js",
+	"author": "Constantine Genchevsky <const.gen@gmail.com>",
+	"license": "GPL-3.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/constgen/neutrino-storybook.git",
+		"directory": "packages/preset-storybook-vue"
+	},
+	"homepage": "https://github.com/constgen/neutrino-storybook/tree/master/packages/preset-storybook-vue",
+	"keywords": [
+		"neutrino",
+		"neutrino-preset",
+		"webpack",
+		"storybook",
+		"vue"
+	],
+	"bin": {
+		"build-storybook": "./bin/build.js",
+		"start-storybook": "./bin/start.js",
+		"storybook": "./bin/start.js"
+	},
+	"dependencies": {
+		"deepmerge": "4.2.2",
+		"arrify": "2.0.1",
+		"@babel/core": "^7.0.0",
+		"babel-loader": "^8.0.0",
+		"react-is": "^17.0.1",
+		"neutrino-middleware-storybook": "workspace:1.0.2",
+		"@storybook/addon-actions": "^6.1.21",
+		"@storybook/addon-backgrounds": "^6.1.21",
+		"@storybook/addon-controls": "^6.1.21",
+		"@storybook/addon-docs": "^6.1.21",
+		"@storybook/addon-toolbars": "^6.1.21",
+		"@storybook/addon-viewport": "^6.1.21",
+		"@storybook/addon-links": "^6.1.21",
+		"@storybook/vue": "^6.1.21",
+		"@storybook/source-loader": "^6.1.21",
+		"@mdx-js/loader": "~1.6.22",
+		"vue-loader": "^15.7.0",
+		"vue-template-compiler": "^2.6.8",
+		"vue-docgen-loader": "~1.5.0"
+	},
+	"peerDependencies": {
+		"neutrino": "^9.0.0",
+		"webpack": "^4.0.0"
+	},
+	"files": [
+		"**/*.js",
+		"README.md",
+		"LICENSE",
+		"package.json"
+	],
+	"engines": {
+		"node": ">=10.13",
+		"npm": ">=5.4.0"
+	}
+}

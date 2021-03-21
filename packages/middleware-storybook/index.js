@@ -49,7 +49,7 @@ module.exports = function (customSettings = {}) {
 						performance: deepmerge(neutrinoConfig.performance, storybookConfig.performance),
 						module     : {
 							...storybookConfig.module,
-							rules: deepmerge(storybookRules, neutrinoConfig.module.rules)
+							rules: deepmerge(neutrinoConfig.module.rules, storybookRules)
 						}
 					}
 				 }
