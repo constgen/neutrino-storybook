@@ -8,14 +8,6 @@
 ## Features
 
 - Compatible with any other middlewares and presets
-- Include addons:
-  - [Links](https://github.com/storybookjs/storybook/tree/master/addons/links)
-  - [Actions](https://storybook.js.org/docs/react/essentials/actions)
-  - [Backgrounds](https://storybook.js.org/docs/react/essentials/backgrounds)
-  - [Controls](https://storybook.js.org/docs/react/essentials/controls)
-  - [Docs](https://storybook.js.org/docs/react/writing-docs/introduction)
-  - [Viewport](https://storybook.js.org/docs/react/essentials/viewport)
-  - [Toolbars](https://storybook.js.org/docs/react/essentials/toolbars-and-globals)
 - Aliases to addons so you can import them in your stories directly by name (e.g. `import { Meta } from '@storybook/addon-docs/blocks'`)
 - MDX stories support
 - Markdown support
@@ -92,15 +84,7 @@ neutrino.use(storybook({
       '../src/**/*.stories.@(js|jsx|ts|tsx)',
       '../src/**/*.stories.mdx'
    ],
-   addons: [
-      '@storybook/addon-links',
-      '@storybook/addon-actions',
-      '@storybook/addon-backgrounds',
-      '@storybook/addon-controls',
-      '@storybook/addon-docs',
-      '@storybook/addon-viewport',
-      '@storybook/addon-toolbars'
-   ]
+   addons: []
 }))
 ```
 
